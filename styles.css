@@ -1,68 +1,260 @@
 body {
-    background-color: rgb(85, 76, 76);
+    background-color: rgb(1, 32, 31);
 }
 
 header {
-    height: 60px;margin-bottom: 40px;
+    height: 60px;
+    margin-bottom: 0px;
+    padding: 10px;
 }
 h1 {
     color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 10px;
     
+    
+}
+
+#calculette{
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgb(22, 22, 22);
+    width: 300px;
+    height: auto;
+    margin: auto;
 }
 
 .screen{
     padding: 10px;
     height: 30px;
-    width: 250px;
+    font-size: 1.8em;
+    width: 190px;
+    margin-left: 10px;
+    margin-top: 10px;
     margin-bottom: 20px;
-    background-color: rgb(191, 219, 252);
+    color: black;
+    text-align: right;
+    background-color: rgb(198, 237, 255);
+    border-radius: 5px;
 }
 
 .parent {
     background-color: black;
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    height: 100%;
     padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+   
+    }
+
+    .div-c:hover {
+        border-radius: 0px;
+
+    }
+
+    .div-c { 
+        padding: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 1.6em;
+        font-weight: bold;
+        background-color: rgb(80, 66, 155);
+        border: 0px solid white;
+        text-align: center;
+        border-radius: 0px;
+        
     }
     
-    .div1 { grid-area: 1 / 1 / 2 / 2;padding: 20px;color: white; background-color: rgb(80, 66, 155);border: 0px solid white; text-align: center; }
-    .div2 { grid-area: 1 / 2 / 2 / 3;padding: 20px;color: white; background-color: rgb(80, 66, 155);border: 0px solid white; text-align: center; }
-    .div3 { grid-area: 1 / 3 / 2 / 4;padding: 20px;color: white; background-color: rgb(80, 66, 155);border: 0px solid white; text-align: center; }
+    .div-p {
+        padding: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 1.6em;
+        font-weight: bold;
+        background-color: rgb(80, 66, 155);
+        border: 0px solid white;
+        text-align: center;
+        
+    }
+    .div-pourcent {
+        padding: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 1.6em;
+        font-weight: bold;
+        background-color: rgb(80, 66, 155);
+        border: 0px solid white;
+        text-align: center;
+    }
 
-    .div4 { grid-area: 1 / 4 / 2 / 5;padding: 20px;color: white; background-color: rgb(80, 66, 155);border: 0px solid white; text-align: center;}
+    .div-divise {
+        padding: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 1.6em;
+        font-weight: bold;
+        background-color: rgb(80, 66, 155);
+        border: 0px solid white;
+        text-align: center;
+    }
 
-    .div5 { grid-area: 1 / 5 / 2 / 6;padding: 20px;color: white; background-color: rgb(80, 66, 155);border: 0px solid white; text-align: center;}
+    .div-sept {
+        padding: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 1.6em;
+        font-weight: bold;
+        background-color: rgb(80, 66, 155);
+        border: 0px solid white;
+        text-align: center;
+    }
 
-    .div6 { grid-area: 2 / 1 / 3 / 2;padding: 20px;color: white; background-color: rgb(80, 66, 155);border: 0px solid white; text-align: center;}
+    .div-huit {
+        padding: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 1.6em;
+        font-weight: bold;
+        background-color: rgb(80, 66, 155);
+        border: 0px solid white;
+        text-align: center;
+    }
 
-    .div7 { grid-area: 2 / 2 / 3 / 3;padding: 20px;color: white; background-color: rgb(80, 66, 155);border: 0px solid white; text-align: center;}
+    .div-neuf {
+        padding: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 1.6em;
+        font-weight: bold;
+        background-color: rgb(80, 66, 155);
+        border: 0px solid white;
+        text-align: center;
+    }
 
+    .div-multiple {
+        padding: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 1.6em;
+        font-weight: bold;
+        background-color: rgb(80, 66, 155);
+        border: 0px solid white;
+        text-align: center;
+    }
 
-    .div8 { grid-area: 2 / 3 / 3 / 4;padding: 20px;color: white; background-color: rgb(80, 66, 155);border: 0px solid white;text-align: center; }
+    .div-quatre {
+        padding: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 1.6em;
+        font-weight: bold;
+        background-color: rgb(80, 66, 155);
+        border: 0px solid white;
+        text-align: center;
+    }
 
-    .div9 { grid-area: 2 / 4 / 3 / 5;padding: 20px;color: white; background-color: rgb(80, 66, 155);border: 0px solid white;text-align: center; }
+    .div-cinq {
+        padding: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 1.6em;
+        font-weight: bold;
+        background-color: rgb(80, 66, 155);
+        border: 0px solid white;
+        text-align: center;
+    }
 
-    .div10 { grid-area: 2 / 5 / 3 / 6;padding: 20px;color: white; background-color: rgb(80, 66, 155);border: 0px solid white;text-align: center; }
+    .div-six {
+        padding: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 1.6em;
+        font-weight: bold;
+        background-color: rgb(80, 66, 155);
+        border: 0px solid white;
+        text-align: center;
+    }
 
-    .div11 { grid-area: 3 / 1 / 4 / 2;padding: 20px;color: white; background-color: rgb(80, 66, 155);border: 0px solid white;text-align: center; }
+    .div-moins {
+        padding: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 1.6em;
+        font-weight: bold;
+        background-color: rgb(80, 66, 155);
+        border: 0px solid white;
+        text-align: center;
+    }
 
-    .div12 { grid-area: 3 / 2 / 4 / 3;padding: 20px;color: white; background-color: rgb(80, 66, 155);border: 0px solid white;text-align: center; }
+    .div-un {
+        padding: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 1.6em;
+        font-weight: bold;
+        background-color: rgb(80, 66, 155);
+        border: 0px solid white;
+        text-align: center;
+    }
 
-    .div13 { grid-area: 3 / 3 / 4 / 4;padding: 20px;color: white; background-color: rgb(80, 66, 155);border: 0px solid white;text-align: center; }
+    .div-deux {
+        padding: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 1.6em;
+        font-weight: bold;
+        background-color: rgb(80, 66, 155);
+        border: 0px solid white;
+        text-align: center;
+    }
 
-    .div14 { grid-area: 3 / 4 / 4 / 5;padding: 20px;color: white; background-color: rgb(80, 66, 155);border: 0px solid white;text-align: center; }
+    .div-trois {
+        padding: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 1.6em;
+        font-weight: bold;
+        background-color: rgb(80, 66, 155);
+        border: 0px solid white;
+        text-align: center;
+    }
 
-    .div15 { grid-area: 3 / 5 / 4 / 6;padding: 20px;color: white; background-color: rgb(80, 66, 155);border: 0px solid white; text-align: center;}
+    .div-addition {
+        padding: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 1.6em;
+        font-weight: bold;
+        background-color: rgb(80, 66, 155);
+        border: 0px solid white;
+        text-align: center;
+    }
 
-    .div16 { grid-area: 4 / 1 / 5 / 2;padding: 20px;color: white; background-color: rgb(80, 66, 155);border: 0px solid white; text-align: center;}
+    .div-plusmoins {
+        padding: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 1.6em;
+        font-weight: bold;
+        background-color: rgb(80, 66, 155);
+        border: 0px solid white;
+        text-align: center;
+    }
 
-    .div17 { grid-area: 4 / 2 / 5 / 3;padding: 20px;color: white; background-color: rgb(80, 66, 155);border: 0px solid white; text-align: center;}
+    .div-zero {
+        padding: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 1.6em;
+        font-weight: bold;
+        background-color: rgb(80, 66, 155);
+        border: 0px solid white;
+        text-align: center;
+    }
 
-    .div18 { grid-area: 4 / 3 / 5 / 4;padding: 20px;color: white; background-color: rgb(80, 66, 155);border: 0px solid white; text-align: center; }
+    .div-virgule {
+        padding: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 1.6em;
+        font-weight: bold;
+        background-color: rgb(80, 66, 155);
+        border: 0px solid white;
+        text-align: center;
+    }
 
-    .div19 { grid-area: 4 / 4 / 5 / 5;padding: 20px;color: white; background-color: rgb(80, 66, 155);border: 0px solid white; text-align: center;}
-
-    .div20 { grid-area: 4 / 5 / 5 / 6;padding: 20px;color: white; background-color: rgb(80, 66, 155);border: 0px solid white; text-align: center;}
+    .div-equal {
+        padding: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 1.6em;
+        font-weight: bold;
+        background-color: rgb(80, 66, 155);
+        border: 0px solid white;
+        text-align: center;
+    }
